@@ -114,3 +114,6 @@ max-width을 따로 설정해줘서 기존의 inner 가로폭 덮어씌움
 tiles 는 ~~grid로 배치~ -> float 방법
 
 ### Chp.7 Where is
+
+svg - fill 속성을 통한 색깔 조정
+footer.logo의 가운데 배치하는 코드
