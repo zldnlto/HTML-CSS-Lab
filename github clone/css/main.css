@@ -10,7 +10,6 @@ header {
 
 header .inner { 
     height: 78px;
-
 }
 
 header .menu-group {
@@ -25,7 +24,7 @@ header .logo {
 }
 
 header .logo a {
-    background: url("../img/logo.svg");
+    background: url("/assets/img/logo.svg");
     width: 32px;
     height: 32px;
     display: block; 
@@ -34,7 +33,7 @@ header .logo a {
 }
 
 header .logo a:hover {
-    background: url("../img/logo_on.svg");
+    background: url("/assets/img/logo_on.svg");
 }
 
 
@@ -96,7 +95,7 @@ header .sub-menu li a:hover {
 }
 /* VISUAL */
 .section--visual {
-    background-image: url("../img/bg.jpg");
+    background-image: url("/assets/img/bg.jpg");
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
@@ -350,4 +349,16 @@ footer .logo {
 
 footer .logo svg:hover{
     fill: #4078c0;
+}
+
+#toggle-btn {
+    display: none;
+    background: url("../assets/img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    position: absolute; 
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    text-indent : -9999px; 
 }
