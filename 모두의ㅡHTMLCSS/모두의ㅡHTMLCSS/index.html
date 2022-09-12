@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모두의 HTML/CSS</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1 class="main-logo">
+          <a href="#">
+            <span>모두의 </span>
+            <span>HTML/CSS</span>
+          </a>
+        </h1>
+        <nav>
+          <ul class="main-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </nav>
+        <button class="search-btn">
+          <span class="ir">검색 버튼</span>
+          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2>모두의 HTML/CSS</h2>
+        <p><strong>HELLO<br>WORLD! :)</strong></p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui in error
+          beatae itaque, vitae ut possimus excepturi porro
+        </p>
+        <button>회원가입</button>
+        <button>Button</button>
+        <aside>
+          <a href=""></a>
+          <a href=""></a>
+        </aside>
+      </section>
+      <section class="tech-stacks">
+        <h2>tech-stacks</h2>
+        <!-- ul>li과 고민했다,, -->
+        <dl class="stack-list"> 
+          <dt class="stack-items">
+            <h3>HTML</h3>
+            <dd>
+                <p>Hypertext Markup</p>
+                <p>웹을 이루는 어쩌구</p>
+            </dd>
+          </dt>
+          <dt class="stack-items">
+            <h3>CSS</h3>
+            <dd>
+                <p>Cascading Style</p>
+                <p>HTML이나 어쩌구</p>
+            </dd>
+          </dt>
+          <dt class="stack-items">
+            <h3>Javascript</h3>
+            <dd>
+                <p>일급 함수를 사용하는 가벼운 객체 지향 인터프리터 언어</p>
+                <p>웹페이지의 스크립트 언어로 잘 알려져 있지만, 어쩌구</p>
+            </dd>
+          </dt> 
+        </dl>
+      </section>
+      <section class="time-schedule">
+        <h2>일정</h2>
+        <!-- 사이트 이동하는 링크라고 가정하였습니다 -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="">
+                        <figure>
+                            <img src="" alt="운동">
+                            <figcaption>
+                                <p>오전 5:00</p>
+                                <h3>헛둘셋넷 열심히 운동하기</h3>
+                                <p>Lorem ipsum dolor sit.</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li><a href=""><h3>지친몸 이끌고 출근하기</h3></a></li>
+                <li><a href=""><h3>치킨과 함께하는 신나는 퇴근</h3></a></li>
+            </ul>
+        </nav>
+      </section>
+      <section class="board">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <ul>
+            <li>
+                <button>Tab1</button>
+                <nav>
+                    <ol>
+                        <li><a href="">10</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">6</a></li>
+                    </ol>
+                </nav>
+            </li>
+            <li>
+                <button>Tab2</button>
+                <nav>
+                    <ol class="hidden">
+                        <li><a href="">10</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">6</a></li>
+                    </ol>
+                </nav>
+            </li>
+            <li>
+                <button>Tab3</button>
+                <nav>
+                    <ol class="hidden">
+                        <li><a href="">10</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">6</a></li>
+                    </ol>
+                </nav>
+            </li>
+        </ul>
+      </section>
+      <section>
+        <button>
+            <img src="" alt="왼쪽 꺽쇠 버튼">
+        </button>
+        <button>  
+            <img src="" alt="오른쪽 꺽쇠 버튼">
+        </button>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="" alt="사자">
+                            <figcaption><strong>Lorem ipsum dolor sit amet consectetur.</strong>
+                            Lorem, ipsum.</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="" alt="토끼">
+                            <figcaption><strong>Lorem ipsum dolor sit amet consectetur.</strong>
+                            Lorem, ipsum.</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="" alt="멍뭉이">
+                            <figcaption><strong>Lorem ipsum dolor sit amet consectetur.</strong>
+                            Lorem, ipsum.</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+      </section>
+    </main>
+    <footer>
+        <h2>회사 정보</h2>
+        <img src="" alt="모두의HTML/CSS 로고">
+        <address> 서울특별시 사랑시 고백구 행복동<br>02-967-6543 / abc@gmail.com</address>
+        <small>ⓒWeniv all rights reserved</small>
+    </footer>
+  </body>
+</html>
