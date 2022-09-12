@@ -10,7 +10,9 @@
 
 body,
 h1,
-ul {
+h2,
+ul,
+p {
   margin: 0;
   padding: 0;
 }
@@ -22,6 +24,13 @@ button {
 }
 
 /* common */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "yg-jalnan";
@@ -41,12 +50,12 @@ button {
 }
 
 /* HEADER */
-header {
+#header {
   max-width: 1920px;
-  height: 101px;
+  height: 100px;
 }
 
-header .wrapper {
+.header__wrapper {
   position: relative;
   width: 1225px;
   height: 100%; /*header의 100%*/
@@ -55,7 +64,7 @@ header .wrapper {
   align-items: center;
 }
 
-header .main-logo {
+.header__wrapper .main-logo {
   position: relative;
   width: 131px;
   height: 56px;
@@ -77,11 +86,11 @@ header .main-logo {
   border-radius: 4px;
   background-color: #ffcf5c;
 }
-header nav {
+.header__wrapper nav {
   height: 100%;
 }
 
-header .main-menu {
+.header__wrapper .main-menu {
   display: flex;
   height: 100%;
 }
@@ -102,7 +111,7 @@ header .main-menu {
   border-bottom: 6px solid #3a2a21;
 }
 
-header .search-btn {
+.header__wrapper .search-btn {
   position: absolute;
   top: 25%;
   right: 0;
@@ -113,4 +122,144 @@ header .search-btn {
   border-radius: 4px;
   padding-left: 10px;
   padding-top: 10px;
+}
+
+/* 메인 영역 - 라이캣 배너 */
+
+.main-banner {
+  max-width: 1920px;
+  background-color: #ffcf5c;
+}
+
+.main-banner__wrapper {
+  position: relative;
+  background-color: #ffcf5c;
+  background: url("./assets/Lycat_3\ 1.png") no-repeat;
+  background-position-y: 18px;
+  width: auto;
+  height: 700px;
+
+  color: #3a2a21;
+}
+
+.main-banner__items {
+  position: absolute;
+  left: 42%;
+  top: 164px;
+
+  width: 501px;
+  height: 516px;
+  margin: 0 auto;
+}
+
+.main-banner__wrapper h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+.main-banner__wrapper .main-banner__tit {
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 100px;
+  width: 489px;
+  height: 200px;
+  margin-bottom: 18px;
+}
+.main-banner__wrapper .main-banner__txt {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.main-login {
+  text-align: center;
+}
+.main-login .main-join {
+  display: inline-block;
+  vertical-align: top;
+  width: 180px;
+  height: 64px;
+  background-color: #3a2a21;
+  border: 1px solid #3a2a21;
+  border-radius: 10px;
+  margin-right: 9px;
+  color: #fff;
+  font-size: 18px;
+  padding-top: 21px;
+}
+.main-login .main-button {
+  width: 180px;
+  height: 64px;
+  box-shadow: 0 0 0 1px #3a2a21 inset;
+  border-radius: 10px;
+  margin-right: 9px;
+}
+
+.main-button:hover {
+  transition: all 0.3s ease-out;
+  background-color: #3a2a21;
+  color: #fff;
+}
+
+@media screen and (max-width: 1480px) {
+  .main-aside {
+    display: none;
+  }
+}
+
+.main-aside {
+  position: absolute;
+  top: 50px;
+  right: 208px;
+}
+
+.main-aside a {
+  position: relative;
+  display: block;
+  width: 125px;
+  height: 170px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19.2px;
+  text-align: center;
+  background-color: red;
+}
+
+.main-aside a p {
+  position: absolute;
+  left: 18px;
+  bottom: 10px;
+}
+
+.main-aside a:nth-child(1) {
+  position: relative;
+  background: url(./assets/image\ 1.png);
+  color: #436a2c;
+  margin-bottom: 12px;
+}
+
+.main-aside a > p {
+  z-index: 99;
+}
+
+.main-aside a:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  display: inline-block;
+  width: 125px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #faf1be;
+}
+
+.main-aside a:nth-child(2) {
+  background-color: #ffffff;
+  color: #063f94;
 }

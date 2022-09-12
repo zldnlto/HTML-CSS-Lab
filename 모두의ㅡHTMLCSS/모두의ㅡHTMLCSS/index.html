@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header>
-      <div class="wrapper">
+    <header id="header">
+      <div class="header__wrapper">
         <h1 class="main-logo">
           <a href="#">
             <span>모두의 </span>
@@ -31,19 +31,28 @@
       </div>
     </header>
     <main>
-      <section>
-        <h2>모두의 HTML/CSS</h2>
-        <p><strong>HELLO<br>WORLD! :)</strong></p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui in error
-          beatae itaque, vitae ut possimus excepturi porro
-        </p>
-        <button>회원가입</button>
-        <button>Button</button>
-        <aside>
-          <a href=""></a>
-          <a href=""></a>
-        </aside>
+      <section class="main-banner">
+        <div class="main-banner__wrapper">
+          <div class="main-banner__items">
+            <h2>모두의 HTML/CSS</h2>
+            <p class="main-banner__tit">
+              <strong>HELLO<br>WORLD! :)</strong>
+            </p>
+            <p class="main-banner__txt">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui in error
+              beatae itaque, vitae ut possimus excepturi porro
+            </p>
+            <div class="main-login">
+              <a href="" class="main-join">회원가입</a>
+              <button class="main-button">Button</button>
+            </div>
+          </div>
+          <aside class="main-aside">
+            <a href=""><p>M.B.I.T 강의<br>보러가기</p></a>
+            <a href=""><p>30분 요약강좌<br>보러가기</p>
+            </a>
+          </aside>
+        </div>
       </section>
       <section class="tech-stacks">
         <h2>tech-stacks</h2>
