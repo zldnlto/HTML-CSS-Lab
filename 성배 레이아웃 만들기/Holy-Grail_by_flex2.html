@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성배 - 플렉스2</title>
+  </head>
+  <body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container {
+          max-width: 960px;
+          text-align: center;
+        }
+  
+        .item {
+          padding: 30px 0;
+        }
+  
+        .header {
+            background-color: tomato;
+            padding: 50px 0;
+
+        }
+        .wrapper {
+            display: flex;
+        }
+        .content {
+          background-color: royalblue;
+          flex-grow:1;
+          order:1;
+          text-align: center;
+        vertical-align: middle;
+        line-height: 2.5;
+        padding: 30px 0;
+        }
+        .sidebar {
+          background-color: rosybrown;
+            flex-grow:1;
+            order: 0;
+            padding: 50px 0;
+        }
+        .footer {
+          background-color: slateblue;
+          padding: 50px 0;
+
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <header class="header">헤더입니다</header>
+        <main class="wrapper">
+            <section class="content item">컨텐츠1</section>
+            <section class="content item">컨텐츠2</section>
+            <aside class="sidebar">사이드바입니다</aside>
+        </main>
+        <footer class="footer">푸터입니다</footer>
+      </div>
+    </body>
+</html>

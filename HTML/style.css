@@ -1,0 +1,35 @@
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: tomato;
+  color: #fff;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.left {
+  float: left;
+  background-color: yellowgreen;
+}
+
+.right {
+  float: right;
+}
+
+div:nth-child(4) {
+  width: 200px;
+  height: 150px;
+  background-color: orange;
+}
+
+.clear {
+  clear: both;
+}
+
+span {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background-color: rosybrown;
+}
