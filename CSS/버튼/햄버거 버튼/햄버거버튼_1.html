@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>햄버거 버튼 애니메이션 1</title>
+    <style>
+      body {
+        background-color: #282828;
+        padding: 10%;
+      }
+
+      .hamburger,
+      .hamburger span {
+        display: block;
+      }
+
+      .hamburger {
+        width: 100px;
+      }
+      .hamburger span {
+        width: 100%;
+        height: 1em;
+        border-radius: 10px;
+        background-color: #fff;
+        transition: all 0.4s;
+      }
+
+      .hamburger span + span {
+        margin-top: 1em;
+      }
+
+      .hamburger.active span:nth-of-type(1) {
+        transform: translateY(2em) rotate(-45deg);
+      }
+
+      .hamburger.active span:nth-of-type(2) {
+        opacity: 0;
+      }
+
+      .hamburger.active span:nth-of-type(3) {
+        transform: translateY(-2em) rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <script>
+      const hamburgerBtn = document.querySelector(".hamburger");
+
+      hamburgerBtn.addEventListener("click", (event) => {
+        event.currentTarget.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
