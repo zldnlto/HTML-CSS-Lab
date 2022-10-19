@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가운데정렬</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: royalblue;
+        position: relative;
+      }
+
+      .txt {
+        display: inline-block;
+        position: absolute;
+        background: pink;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <p class="txt">there is text</p>
+    </div>
+    <p>1번. display: flex; justify-content: center;</p>
+    <p>2번. left: 50%; transform:traslateX(-50%);</p>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애니메이션</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: royalblue;
+      }
+      @keyframes fadeOut {
+        100% {
+          /* display: none; */
+          opacity: 0;
+          pointer-events: none;
+        }
+      }
+      .btn {
+        width: 100px;
+        height: 100px;
+        background: pink;
+        cursor: pointer;
+        animation: fadeout 3s forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button type="button" class="button">버튼</button>
+    </div>
+    <p>
+      display 속성은 애니메이션으로 제어할 수 없어서 display:none을 쓸 수 없다.
+    </p>
+    <p>버튼의 존재감을 pointer-evnet:none로 없애준다</p>
+    <p>노말플로우에서 완전히 제거 -> javascript 이용, display:none으로 제어</p>
+
+    <script>
+      const btn = document.querySelector(".button");
+      btn.addEventListener("animationend", (e) => {
+        e.target.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
